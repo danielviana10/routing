@@ -8,6 +8,8 @@ import { SecondPageComponent } from './second-page/second-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PageWithParamsComponent } from './page-with-params/page-with-params.component';
 import { ProtectedPageComponent } from './protected-page/protected-page.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ProtectedPageComponent } from './protected-page/protected-page.componen
     SecondPageComponent,
     PageNotFoundComponent,
     PageWithParamsComponent,
-    ProtectedPageComponent
+    ProtectedPageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
